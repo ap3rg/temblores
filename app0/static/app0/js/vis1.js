@@ -34,26 +34,21 @@ var sliderRange = d3
 		getRange(val.map(d3.timeFormat('%Y-%m-%d')).join('\t'));
 	});
 
-function onCheckChange(){
-	var sliderValues = document.getElementById('value-range').textContent;
-	var currentValues = sliderValues.split("\ta\t");
-	var start = new Date(currentValues[0]);
-	start = start.toISOString().split("T")[0];
-	var end = new Date(currentValues[1]);
-	end = end.toISOString().split("T")[0];
-	var val = start + "\t" + end;
-	getRange(val);
-};
 
 function getRange(val) {
-	var homicidiosOn = document.getElementById("homicidios");
-	var violenciaOn = document.getElementById("violencia");
 	start = val.split('\t')[0];
 	end = val.split('\t')[1];
+
+	var dataToPlot_v;
+	var dataToPlot_h;
 
 	if(start === end) {
 		dataToPlot_v = contextData_v[start];
 		dataToPlot_h = contextData_h[start];
+
+		if(dataToPlot_h == null) {
+			dataToPlot_h = []
+		};
 	} else {
 		var total_v = [0,0,0,0,0,0,0,0,0]
 		var total_h = [0,0,0,0,0,0,0,0,0]
@@ -86,31 +81,14 @@ function getRange(val) {
 		//console.log(total);
 		dataToPlot_v = total_v;
 		dataToPlot_h = total_h;
-
-		//console.log(dataToPlot);
 	};
 
-	grand_total_v = dataToPlot_v.reduce((a, b) => a + b, 0);
-	grand_total_h = dataToPlot_h.reduce((a, b) => a + b, 0);
+	grand_total_v = dataToPlot_v.reduce((a,b) => a + b, 0)
+	grand_total_h = dataToPlot_h.reduce((a,b) => a + b, 0)
+	dataToPlot_v.push(grand_total_v);
+	dataToPlot_h.push(grand_total_h);
 
-	var total_h = d3
-		.select('p#total_h')
-		.text("Total homicidios: " + grand_total_h)
-
-	var total_h = d3
-		.select('p#total_v')
-		.text("Total actos violencia interpersonal: " + grand_total_v)
-
-
-	if((homicidiosOn.checked == true) & (violenciaOn.checked == true)){
-		plot_both(dataToPlot_v, dataToPlot_h);
-	} else if ((homicidiosOn.checked == true) & (violenciaOn.checked == false)) {
-		plot_both([], dataToPlot_h);
-	} else if ((homicidiosOn.checked == false) & (violenciaOn.checked == true)) {
-		plot_both(dataToPlot_v, []);
-	} else {
-		plot_both(dataToPlot_v, dataToPlot_h);
-	};
+	plot_both(dataToPlot_v, dataToPlot_h);
 };
 
 
@@ -147,6 +125,7 @@ function plot_both(dataToPlot_v, dataToPlot_h) {
 						"18:00-20:59",
 						"21:00-23:59",
 						"Sin dato",
+						"Total"
 					],
 					datasets: [{
 							label: 'Violencia Interpersonal',
@@ -162,17 +141,18 @@ function plot_both(dataToPlot_v, dataToPlot_h) {
 					},]
 					},
 			options: {
-				showTooltips: false,
 				title: {
             display: true,
-            text: "Numero de incidentes de violencia"
+            text: "Numero de incidentes de violencia",
+						fontSize: "20"
         },
 				scales: {
 					yAxes: [{
 						stacked: true,
 						scaleLabel: {
 			        display: true,
-			        labelString: "Numero de incidentes"
+			        labelString: "Numero de incidentes",
+							fontSize: "20"
 			      },
 						ticks: {
 							beginAtZero: true
@@ -182,7 +162,8 @@ function plot_both(dataToPlot_v, dataToPlot_h) {
 						stacked: true,
 						scaleLabel: {
 			        display: true,
-			        labelString: "Hora del incidente"
+			        labelString: "Hora del incidente",
+							fontSize: "20"
 			      }
 					}]
 				}

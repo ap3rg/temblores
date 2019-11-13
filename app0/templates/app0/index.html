@@ -1,6 +1,7 @@
 {% extends 'app0/base.html' %}
 
 {% block content %}
+{% load static %}
   <!-- Page Content -->
   <div class="container">
 
@@ -16,57 +17,50 @@
     <div class="row text-center">
 
       <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="{% url 'app0:vis1' %}" class="btn btn-info">Explorar</a>
-          </div>
+        <h5>Datos por fecha y hora</h5>
+        <img style="width: 50px; height: width" src="{% static 'app0/img/calendar.svg' %}" alt="">
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Datos por sexo y edad</h5>
+        <img style="width: 70px; height: width" src="{% static 'app0/img/gender.svg' %}" alt="">
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Datos por geografía</h5>
+        <img style="width: 50px; height: width" src="{% static 'app0/img/colombia.svg' %}" alt="">
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Datos por fecha y hora</h5>
+        <img style="width: 50px; height: width" src="{% static 'app0/img/calendar.svg' %}" alt="">
+      </div>
+    </div>
+    <div class="row text-center">
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="footer">
+          <a href="{% url 'app0:vis1' %}" class="btn btn-info">Explorar</a>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-info">Explorar</a>
-          </div>
+        <div class="footer">
+          <a href="{% url 'app0:vis2' %}" class="btn btn-info">Explorar</a>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-info">Explorar</a>
-          </div>
+        <div class="footer">
+          <a href="{% url 'app0:vis1' %}" class="btn btn-info">Explorar</a>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-info">Explorar</a>
-          </div>
+        <div class="footer">
+          <a href="{% url 'app0:vis1' %}" class="btn btn-info">Explorar</a>
         </div>
       </div>
-
     </div>
     <!-- /.row -->
 
