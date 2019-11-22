@@ -1,1 +1,1 @@
-web: gunicorn temblores.app0.wsgi --log-file -
+web: gunicorn temblores.wsgi --log-file -
