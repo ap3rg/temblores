@@ -29,12 +29,13 @@ def get_totals(df):
     return df.loc[(df['month'] == 0)]
 
 def build_data_dict(df):
-    data = {}
+    values = []
     tmp = df.drop(['year'], inplace=False, axis=1)
     tmp.drop(['month'], inplace=True, axis=1)
     tmp.drop(['day'], inplace=True, axis=1)
     tmp.drop(['Total General'], inplace=True, axis=1)
     for i in range(0, df.shape[0]):
+        data = {}
         year = df.iloc[i]['year']
         month = df.iloc[i]['month']
         day = df.iloc[i]['day']
@@ -43,12 +44,13 @@ def build_data_dict(df):
         if(month != 0 and day != 0):
             date = datetime.datetime(year, month, day).strftime("%Y-%m-%d")
             #date = "{}-{}-{}".format(year, month, day)
-            data[date] = instances
-
+            data["date"] = date
+            data["instances"] = instances
+            values.append(data)
     # totals = get_totals()
 
 
-    return json.dumps(data)
+    return json.dumps(values)
 
 def analizar(request):
     context = {}

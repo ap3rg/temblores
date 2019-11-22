@@ -1,0 +1,795 @@
+Departamento 	Municipio 	casos
+Amazonas	Total	23
+Amazonas	La Pedrera	1
+Amazonas	Leticia	22
+Antioquia	Total	3696
+Antioquia	Abejorral	3
+Antioquia	Abriaqui	1
+Antioquia	Alejandria	1
+Antioquia	Amaga	12
+Antioquia	Amalfi	8
+Antioquia	Andes	45
+Antioquia	Angelopolis	3
+Antioquia	Angostura	8
+Antioquia	Anori	3
+Antioquia	Anza	2
+Antioquia	Apartado	12
+Antioquia	Arboletes	5
+Antioquia	Barbosa	32
+Antioquia	Bello	122
+Antioquia	Betania	3
+Antioquia	Betulia	3
+Antioquia	Briceno	13
+Antioquia	Buritica	5
+Antioquia	Caceres	1
+Antioquia	Caicedo	1
+Antioquia	Caldas	23
+Antioquia	Canasgordas	1
+Antioquia	Caracoli	2
+Antioquia	Carepa	1
+Antioquia	Carolina	1
+Antioquia	Caucasia	27
+Antioquia	Chigorodo	2
+Antioquia	Cisneros	7
+Antioquia	Ciudad Bolivar	10
+Antioquia	Cocorna	1
+Antioquia	Concepcion	1
+Antioquia	Concordia	6
+Antioquia	Copacabana	36
+Antioquia	Dabeiba	4
+Antioquia	Donmatias	4
+Antioquia	Ebejico	7
+Antioquia	El Bagre	2
+Antioquia	El Carmen de Viboral	8
+Antioquia	El Santuario	4
+Antioquia	Entrerrios	2
+Antioquia	Envigado	114
+Antioquia	Fredonia	3
+Antioquia	Frontino	1
+Antioquia	Giraldo	3
+Antioquia	Girardota	19
+Antioquia	Gomez Plata	4
+Antioquia	Granada	2
+Antioquia	Guadalupe	3
+Antioquia	Guarne	16
+Antioquia	Guatape	5
+Antioquia	Heliconia	3
+Antioquia	Hispania	1
+Antioquia	Itagui	206
+Antioquia	Ituango	12
+Antioquia	Jardin	13
+Antioquia	Jerico	2
+Antioquia	La Ceja	25
+Antioquia	La Estrella	51
+Antioquia	La Pintada	2
+Antioquia	La Union	1
+Antioquia	Liborina	1
+Antioquia	Marinilla	9
+Antioquia	Medellin	2402
+Antioquia	Montebello	3
+Antioquia	Mutata	1
+Antioquia	Narino	1
+Antioquia	Necocli	4
+Antioquia	Penol	2
+Antioquia	Pueblorrico	1
+Antioquia	Puerto Berrio	40
+Antioquia	Puerto Nare	1
+Antioquia	Puerto Triunfo	2
+Antioquia	Remedios	18
+Antioquia	Retiro	6
+Antioquia	Rionegro	78
+Antioquia	Sabanalarga	2
+Antioquia	Sabaneta	32
+Antioquia	Salgar	9
+Antioquia	San Andres de Cuerquia	3
+Antioquia	San Carlos	3
+Antioquia	San Francisco	1
+Antioquia	San Luis	2
+Antioquia	San Pedro de los Milagros	4
+Antioquia	San Rafael	5
+Antioquia	San Roque	9
+Antioquia	San Vicente Ferrer	3
+Antioquia	Santa Barbara	2
+Antioquia	Santa Fe de Antioquia	20
+Antioquia	Santa Rosa de Osos	6
+Antioquia	Santo Domingo	6
+Antioquia	Segovia	8
+Antioquia	Sonson	6
+Antioquia	Sopetran	2
+Antioquia	Taraza	7
+Antioquia	Tarso	4
+Antioquia	Titiribi	3
+Antioquia	Toledo	1
+Antioquia	Turbo	29
+Antioquia	Uramita	1
+Antioquia	Urrao	3
+Antioquia	Valdivia	2
+Antioquia	Vegachi	1
+Antioquia	Venecia	1
+Antioquia	Yarumal	24
+Antioquia	Yolombo	5
+Antioquia	Yondo	4
+Antioquia	Zaragoza	1
+Arauca	Total	209
+Arauca	Arauca	140
+Arauca	Arauquita	13
+Arauca	Cravo Norte	1
+Arauca	Fortul	3
+Arauca	Puerto Rondon	1
+Arauca	Saravena	20
+Arauca	Tame	31
+Archipielago de San Andres, Providencia y Santa Catalina	Total	193
+Archipielago de San Andres, Providencia y Santa Catalina	Providencia	2
+Archipielago de San Andres, Providencia y Santa Catalina	San Andres	191
+Atlantico	Total	2599
+Atlantico	Baranoa	29
+Atlantico	Barranquilla	1958
+Atlantico	Campo de la Cruz	2
+Atlantico	Candelaria	3
+Atlantico	Galapa	36
+Atlantico	Juan de Acosta	4
+Atlantico	Luruaco	9
+Atlantico	Malambo	111
+Atlantico	Palmar de Varela	11
+Atlantico	Polonuevo	9
+Atlantico	Ponedera	7
+Atlantico	Puerto Colombia	30
+Atlantico	Repelon	4
+Atlantico	Sabanagrande	7
+Atlantico	Sabanalarga	22
+Atlantico	Santo Tomas	10
+Atlantico	Soledad	341
+Atlantico	Tubara	5
+Atlantico	Usiacuri	1
+Bogota, D,C,	Total	7047
+Bogota, D,C,	Bogota, D,C,	7047
+Bolivar	Total	757
+Bolivar	Achi	2
+Bolivar	Arjona	4
+Bolivar	Calamar	5
+Bolivar	Cantagallo	1
+Bolivar	Cartagena de Indias	612
+Bolivar	Cicuco	2
+Bolivar	Clemencia	1
+Bolivar	Cordoba	3
+Bolivar	El Carmen de Bolivar	24
+Bolivar	El Penon	1
+Bolivar	Magangue	49
+Bolivar	Mahates	1
+Bolivar	Maria la Baja	1
+Bolivar	Mompos	4
+Bolivar	Morales	1
+Bolivar	Norosi	1
+Bolivar	Pinillos	2
+Bolivar	Rio Viejo	2
+Bolivar	San Cristobal	1
+Bolivar	San Jacinto	3
+Bolivar	San Juan Nepomuceno	3
+Bolivar	San Martin de Loba	1
+Bolivar	San Pablo	3
+Bolivar	Santa Rosa	3
+Bolivar	Santa Rosa del Sur	1
+Bolivar	Simiti	1
+Bolivar	Talaigua Nuevo	1
+Bolivar	Tiquisio	2
+Bolivar	Turbaco	17
+Bolivar	Turbana	1
+Bolivar	Villanueva	2
+Bolivar	Zambrano	2
+Boyaca	Total	405
+Boyaca	Almeida	1
+Boyaca	Aquitania	4
+Boyaca	Arcabuco	5
+Boyaca	Boyaca	1
+Boyaca	Caldas	1
+Boyaca	Cerinza	3
+Boyaca	Chiquinquira	42
+Boyaca	Chiscas	1
+Boyaca	Chivor	1
+Boyaca	Combita	2
+Boyaca	Cucaita	2
+Boyaca	Duitama	49
+Boyaca	Gameza	1
+Boyaca	Garagoa	9
+Boyaca	Guateque	3
+Boyaca	Jerico	2
+Boyaca	Macanal	1
+Boyaca	Maripi	1
+Boyaca	Miraflores	4
+Boyaca	Moniquira	6
+Boyaca	Nobsa	1
+Boyaca	Pachavita	2
+Boyaca	Paipa	7
+Boyaca	Pesca	2
+Boyaca	Pisba	1
+Boyaca	Puerto Boyaca	23
+Boyaca	Quipama	1
+Boyaca	Ramiriqui	3
+Boyaca	Rondon	1
+Boyaca	Samaca	4
+Boyaca	San Jose de Pare	1
+Boyaca	San Luis de Gaceno	1
+Boyaca	Santa Maria	2
+Boyaca	Santa Rosa de Viterbo	9
+Boyaca	Santa Sofia	1
+Boyaca	Santana	1
+Boyaca	Siachoque	7
+Boyaca	Soata	1
+Boyaca	Socha	3
+Boyaca	Socota	1
+Boyaca	Sogamoso	39
+Boyaca	Sora	1
+Boyaca	Soraca	12
+Boyaca	Sutamarchan	2
+Boyaca	Tibasosa	1
+Boyaca	Tinjaca	1
+Boyaca	Togui	2
+Boyaca	Topaga	2
+Boyaca	Tunja	128
+Boyaca	Tuta	2
+Boyaca	Tutaza	2
+Boyaca	Ventaquemada	1
+Boyaca	Villa de Leyva	1
+Caldas	Total	383
+Caldas	Aguadas	5
+Caldas	Anserma	17
+Caldas	Aranzazu	3
+Caldas	Belalcazar	3
+Caldas	Chinchina	36
+Caldas	La Dorada	18
+Caldas	La Merced	2
+Caldas	Manizales	247
+Caldas	Marmato	1
+Caldas	Neira	4
+Caldas	Norcasia	1
+Caldas	Palestina	12
+Caldas	Riosucio	6
+Caldas	Risaralda	1
+Caldas	Salamina	3
+Caldas	Samana	1
+Caldas	Supia	3
+Caldas	Villamaria	18
+Caldas	Viterbo	2
+Caqueta	Total	150
+Caqueta	Albania	1
+Caqueta	Belen de los Andaquies	1
+Caqueta	Cartagena del Chaira	3
+Caqueta	Curillo	1
+Caqueta	El Paujil	2
+Caqueta	Florencia	127
+Caqueta	La Montanita	2
+Caqueta	Morelia	1
+Caqueta	Puerto Rico	6
+Caqueta	San Jose del Fragua	2
+Caqueta	San Vicente del Caguan	4
+Casanare	Casanare	194
+Casanare	Aguazul	18
+Casanare	Hato Corozal	4
+Casanare	La Salina	2
+Casanare	Mani	7
+Casanare	Monterrey	13
+Casanare	Nunchia	2
+Casanare	Orocue	2
+Casanare	Paz de Ariporo	9
+Casanare	San Luis de Palenque	2
+Casanare	Tamara	2
+Casanare	Tauramena	5
+Casanare	Trinidad	3
+Casanare	Yopal	125
+Cauca	Total	381
+Cauca	Almaguer	1
+Cauca	Bolivar	2
+Cauca	Buenos Aires	1
+Cauca	Cajibio	2
+Cauca	Caldono	6
+Cauca	Caloto	3
+Cauca	Corinto	3
+Cauca	El Tambo	1
+Cauca	La Sierra	1
+Cauca	Lopez de Micay	1
+Cauca	Mercaderes	2
+Cauca	Miranda	1
+Cauca	Morales	1
+Cauca	Patia	3
+Cauca	Piendamo	1
+Cauca	Popayan	295
+Cauca	Puerto Tejada	14
+Cauca	Purace	9
+Cauca	Santander de Quilichao	26
+Cauca	Sotara	1
+Cauca	Timbio	6
+Cauca	Villa Rica	1
+Cesar	Total	502
+Cesar	Aguachica	64
+Cesar	Agustin Codazzi	17
+Cesar	Astrea	4
+Cesar	Becerril	2
+Cesar	Bosconia	19
+Cesar	Chiriguana	12
+Cesar	Curumani	13
+Cesar	El Copey	1
+Cesar	El Paso	1
+Cesar	Gamarra	1
+Cesar	La Gloria	5
+Cesar	La Jagua de Ibirico	5
+Cesar	La Paz	5
+Cesar	Manaure Balcon del Cesar	5
+Cesar	Pailitas	2
+Cesar	Pelaya	4
+Cesar	Rio de Oro	5
+Cesar	San Alberto	4
+Cesar	San Diego	3
+Cesar	San Martin	5
+Cesar	Valledupar	325
+Choco	Total	135
+Choco	Atrato	1
+Choco	Bagado	1
+Choco	Bahia Solano	1
+Choco	Condoto	4
+Choco	El Carmen de Atrato	2
+Choco	Istmina	2
+Choco	Lloro	4
+Choco	Medio Baudo	1
+Choco	Quibdo	110
+Choco	Rio Quito	1
+Choco	Riosucio	1
+Choco	Sipi	2
+Choco	Tado	2
+Choco	Union Panamericana	3
+Cordoba	Total	161
+Cordoba	Canalete	2
+Cordoba	Cerete	5
+Cordoba	Chinu	1
+Cordoba	Cienaga de Oro	3
+Cordoba	Cotorra	1
+Cordoba	La Apartada	1
+Cordoba	Lorica	22
+Cordoba	Momil	1
+Cordoba	Montelibano	16
+Cordoba	Monteria	85
+Cordoba	Planeta Rica	2
+Cordoba	Pueblo Nuevo	4
+Cordoba	Puerto Libertador	1
+Cordoba	Purisima de la Concepcion	1
+Cordoba	Sahagun	2
+Cordoba	San Andres de Sotavento	1
+Cordoba	San Antero	4
+Cordoba	San Carlos	2
+Cordoba	San Jose de Ure	3
+Cordoba	San Pelayo	4
+Cundinamarca	Total	1110
+Cundinamarca	Agua de Dios	1
+Cundinamarca	Anapoima	4
+Cundinamarca	Anolaima	2
+Cundinamarca	Arbelaez	1
+Cundinamarca	Bituima	1
+Cundinamarca	Bojaca	3
+Cundinamarca	Cabrera	4
+Cundinamarca	Cajica	12
+Cundinamarca	Caparrapi	1
+Cundinamarca	Caqueza	15
+Cundinamarca	Carmen de Carupa	3
+Cundinamarca	Chaguani	1
+Cundinamarca	Chia	52
+Cundinamarca	Chipaque	5
+Cundinamarca	Choachi	1
+Cundinamarca	Choconta	6
+Cundinamarca	Cogua	6
+Cundinamarca	Cota	2
+Cundinamarca	El Colegio	9
+Cundinamarca	El Rosal	2
+Cundinamarca	Facatativa	135
+Cundinamarca	Fomeque	1
+Cundinamarca	Fosca	6
+Cundinamarca	Funza	7
+Cundinamarca	Fuquene	3
+Cundinamarca	Fusagasuga	85
+Cundinamarca	Gachancipa	10
+Cundinamarca	Gama	1
+Cundinamarca	Girardot	94
+Cundinamarca	Granada	2
+Cundinamarca	Guacheta	8
+Cundinamarca	Guaduas	6
+Cundinamarca	Guasca	1
+Cundinamarca	Guayabetal	1
+Cundinamarca	La Calera	2
+Cundinamarca	La Mesa	5
+Cundinamarca	La Vega	8
+Cundinamarca	Lenguazaque	1
+Cundinamarca	Madrid	33
+Cundinamarca	Medina	4
+Cundinamarca	Mosquera	6
+Cundinamarca	Nemocon	3
+Cundinamarca	Nilo	7
+Cundinamarca	Nimaima	3
+Cundinamarca	Nocaima	1
+Cundinamarca	Pacho	7
+Cundinamarca	Paratebueno	6
+Cundinamarca	Pasca	5
+Cundinamarca	Puerto Salgar	1
+Cundinamarca	Puli	1
+Cundinamarca	Quebradanegra	2
+Cundinamarca	Quetame	1
+Cundinamarca	Quipile	2
+Cundinamarca	Ricaurte	10
+Cundinamarca	San Bernardo	2
+Cundinamarca	San Francisco	2
+Cundinamarca	San Juan de Rioseco	1
+Cundinamarca	Sasaima	2
+Cundinamarca	Sesquile	7
+Cundinamarca	Sibate	13
+Cundinamarca	Silvania	12
+Cundinamarca	Simijaca	1
+Cundinamarca	Soacha	321
+Cundinamarca	Sopo	1
+Cundinamarca	Subachoque	3
+Cundinamarca	Suesca	3
+Cundinamarca	Sutatausa	1
+Cundinamarca	Tausa	1
+Cundinamarca	Tena	4
+Cundinamarca	Tenjo	3
+Cundinamarca	Tibacuy	7
+Cundinamarca	Tibirita	3
+Cundinamarca	Tocaima	22
+Cundinamarca	Tocancipa	1
+Cundinamarca	Ubaque	1
+Cundinamarca	Une	3
+Cundinamarca	Utica	5
+Cundinamarca	Venecia	1
+Cundinamarca	Vergara	1
+Cundinamarca	Villa de San Diego de Ubate	20
+Cundinamarca	Villapinzon	1
+Cundinamarca	Villeta	24
+Cundinamarca	Viota	1
+Cundinamarca	Zipacon	4
+Cundinamarca	Zipaquira	40
+Guainia	Total	26
+Guainia	Barranco Minas	2
+Guainia	Inirida	24
+Guaviare	Total	32
+Guaviare	Calamar	3
+Guaviare	El Retorno	5
+Guaviare	Miraflores	1
+Guaviare	San Jose del Guaviare	23
+Huila	Total	843
+Huila	Acevedo	7
+Huila	Agrado	3
+Huila	Aipe	6
+Huila	Algeciras	2
+Huila	Altamira	1
+Huila	Baraya	5
+Huila	Campoalegre	4
+Huila	Colombia	3
+Huila	Garzon	19
+Huila	Gigante	2
+Huila	Guadalupe	2
+Huila	Hobo	6
+Huila	Isnos	11
+Huila	La Argentina	1
+Huila	La Plata	16
+Huila	Nataga	3
+Huila	Neiva	621
+Huila	Oporapa	2
+Huila	Paicol	2
+Huila	Palermo	20
+Huila	Pitalito	72
+Huila	Rivera	11
+Huila	Saladoblanco	1
+Huila	San Agustin	4
+Huila	Tarqui	1
+Huila	Tello	2
+Huila	Teruel	1
+Huila	Tesalia	1
+Huila	Timana	10
+Huila	Villavieja	3
+Huila	Yaguara	1
+La Guajira	Total	407
+La Guajira	Albania	5
+La Guajira	Barrancas	7
+La Guajira	Dibulla	4
+La Guajira	Distraccion	8
+La Guajira	Fonseca	20
+La Guajira	Hatonuevo	6
+La Guajira	Maicao	147
+La Guajira	Manaure	2
+La Guajira	Riohacha	186
+La Guajira	San Juan del Cesar	14
+La Guajira	Uribia	6
+La Guajira	Villanueva	2
+Magdalena	Total	588
+Magdalena	Algarrobo	1
+Magdalena	Aracataca	9
+Magdalena	Ariguani	1
+Magdalena	Chivolo	4
+Magdalena	Cienaga	40
+Magdalena	Concordia	1
+Magdalena	El Banco	18
+Magdalena	Fundacion	31
+Magdalena	Guamal	1
+Magdalena	Nueva Granada	3
+Magdalena	Plato	23
+Magdalena	Puebloviejo	7
+Magdalena	Sabanas de San Angel	4
+Magdalena	Salamina	1
+Magdalena	San Sebastian de Buenavista	1
+Magdalena	Santa Barbara de Pinto	1
+Magdalena	Santa Marta	428
+Magdalena	Sitionuevo	4
+Magdalena	Zona Bananera	10
+Meta	Total	553
+Meta	Acacias	28
+Meta	Barranca de Upia	3
+Meta	Castilla la Nueva	3
+Meta	Cumaral	10
+Meta	Fuente de Oro	2
+Meta	Granada	11
+Meta	Guamal	2
+Meta	La Macarena	3
+Meta	Lejanias	3
+Meta	Mapiripan	3
+Meta	Mesetas	1
+Meta	Puerto Concordia	1
+Meta	Puerto Gaitan	3
+Meta	Puerto Lleras	2
+Meta	Puerto Lopez	23
+Meta	Puerto Rico	1
+Meta	Restrepo	2
+Meta	San Carlos de Guaroa	1
+Meta	San Juan de Arama	2
+Meta	San Martin	5
+Meta	Uribe	1
+Meta	Villavicencio	442
+Meta	Vistahermosa	1
+Narino	Total	779
+Narino	Aldana	2
+Narino	Ancuya	1
+Narino	Barbacoas	4
+Narino	Belen	1
+Narino	Buesaco	10
+Narino	Chachagui	9
+Narino	Contadero	1
+Narino	Cordoba	2
+Narino	Cuaspud	1
+Narino	Cumbal	1
+Narino	Cumbitara	1
+Narino	El Charco	3
+Narino	El Penol	1
+Narino	El Rosario	2
+Narino	El Tambo	2
+Narino	Francisco Pizarro	2
+Narino	Guachucal	1
+Narino	Guaitarilla	1
+Narino	Gualmatan	1
+Narino	Imues	2
+Narino	Ipiales	41
+Narino	La Cruz	2
+Narino	La Union	1
+Narino	Leiva	1
+Narino	Los Andes	4
+Narino	Magui	1
+Narino	Mosquera	3
+Narino	Narino	3
+Narino	Pasto	529
+Narino	Policarpa	2
+Narino	Potosi	2
+Narino	Puerres	5
+Narino	Pupiales	1
+Narino	Ricaurte	2
+Narino	Samaniego	2
+Narino	San Andres de Tumaco	99
+Narino	Sandona	3
+Narino	Santacruz	1
+Narino	Sapuyes	3
+Narino	Taminango	5
+Narino	Tangua	6
+Narino	Tuquerres	12
+Narino	Yacuanquer	3
+Norte de Santander	Total	651
+Norte de Santander	Abrego	10
+Norte de Santander	Bochalema	2
+Norte de Santander	Chinacota	7
+Norte de Santander	Cucuta	401
+Norte de Santander	El Tarra	1
+Norte de Santander	El Zulia	14
+Norte de Santander	Gramalote	4
+Norte de Santander	Hacari	3
+Norte de Santander	La Esperanza	1
+Norte de Santander	Los Patios	37
+Norte de Santander	Mutiscua	1
+Norte de Santander	Ocana	58
+Norte de Santander	Pamplona	26
+Norte de Santander	Puerto Santander	6
+Norte de Santander	Ragonvalia	1
+Norte de Santander	Salazar	6
+Norte de Santander	San Cayetano	4
+Norte de Santander	Sardinata	3
+Norte de Santander	Teorama	1
+Norte de Santander	Tibu	19
+Norte de Santander	Villa del Rosario	46
+Putumayo	Total	141
+Putumayo	Mocoa	65
+Putumayo	Orito	9
+Putumayo	Puerto Asis	36
+Putumayo	Puerto Caicedo	5
+Putumayo	Puerto Guzman	1
+Putumayo	Puerto Leguizamo	10
+Putumayo	San Miguel	4
+Putumayo	Sibundoy	1
+Putumayo	Valle del Guamuez	6
+Putumayo	Villagarzon	4
+Quindio	Total	312
+Quindio	Armenia	172
+Quindio	Buenavista	4
+Quindio	Calarca	38
+Quindio	Circasia	4
+Quindio	Cordoba	7
+Quindio	Filandia	3
+Quindio	Genova	1
+Quindio	La Tebaida	21
+Quindio	Montenegro	27
+Quindio	Quimbaya	34
+Quindio	Salento	1
+Risaralda	Total	318
+Risaralda	Apia	7
+Risaralda	Belen de Umbria	2
+Risaralda	Dosquebradas	64
+Risaralda	Guatica	2
+Risaralda	La Virginia	16
+Risaralda	Marsella	6
+Risaralda	Mistrato	3
+Risaralda	Pereira	179
+Risaralda	Pueblo Rico	6
+Risaralda	Quinchia	1
+Risaralda	Santa Rosa de Cabal	27
+Risaralda	Santuario	5
+Santander	Santander	1875
+Santander	Aratoca	4
+Santander	Barbosa	38
+Santander	Barrancabermeja	85
+Santander	Bucaramanga	933
+Santander	Capitanejo	2
+Santander	Cerrito	2
+Santander	Charala	3
+Santander	Charta	3
+Santander	Chima	1
+Santander	Cimitarra	10
+Santander	Contratacion	2
+Santander	Coromoro	1
+Santander	Curiti	3
+Santander	El Carmen de Chucuri	3
+Santander	El Playon	6
+Santander	Florian	3
+Santander	Floridablanca	243
+Santander	Gambita	1
+Santander	Giron	196
+Santander	Guaca	3
+Santander	Guapota	2
+Santander	Guepsa	9
+Santander	La Belleza	1
+Santander	La Paz	2
+Santander	Lebrija	15
+Santander	Los Santos	4
+Santander	Malaga	3
+Santander	Matanza	9
+Santander	Mogotes	7
+Santander	Oiba	1
+Santander	Paramo	7
+Santander	Piedecuesta	121
+Santander	Puente Nacional	1
+Santander	Puerto Parra	6
+Santander	Puerto Wilches	21
+Santander	Rionegro	3
+Santander	Sabana de Torres	13
+Santander	San Andres	5
+Santander	San Gil	60
+Santander	San Vicente de Chucuri	5
+Santander	Simacota	1
+Santander	Suaita	9
+Santander	Surata	3
+Santander	Tona	4
+Santander	Valle de San Jose	1
+Santander	Velez	14
+Santander	Villanueva	2
+Santander	Zapatoca	4
+Sucre	Total	304
+Sucre	Coloso	1
+Sucre	Corozal	28
+Sucre	Covenas	3
+Sucre	El Roble	1
+Sucre	Galeras	6
+Sucre	La Union	1
+Sucre	Los Palmitos	3
+Sucre	Majagual	2
+Sucre	Morroa	2
+Sucre	Ovejas	5
+Sucre	Palmito	3
+Sucre	Sampues	12
+Sucre	San Juan de Betulia	2
+Sucre	San Luis de Since	7
+Sucre	San Marcos	1
+Sucre	San Onofre	4
+Sucre	San Pedro	1
+Sucre	Santiago de Tolu	16
+Sucre	Sincelejo	205
+Sucre	Tolu Viejo	1
+Tolima	Total	674
+Tolima	Alvarado	2
+Tolima	Ambalema	2
+Tolima	Armero Guayabal	4
+Tolima	Ataco	2
+Tolima	Cajamarca	5
+Tolima	Carmen de Apicala	2
+Tolima	Chaparral	29
+Tolima	Coello	3
+Tolima	Coyaima	5
+Tolima	Dolores	2
+Tolima	Espinal	38
+Tolima	Falan	2
+Tolima	Flandes	21
+Tolima	Fresno	3
+Tolima	Guamo	12
+Tolima	Herveo	1
+Tolima	Honda	24
+Tolima	Ibague	373
+Tolima	Lerida	8
+Tolima	Libano	17
+Tolima	Melgar	22
+Tolima	Murillo	6
+Tolima	Natagaima	2
+Tolima	Ortega	6
+Tolima	Palocabildo	1
+Tolima	Piedras	8
+Tolima	Planadas	6
+Tolima	Purificacion	3
+Tolima	Rioblanco	5
+Tolima	Rovira	3
+Tolima	Saldana	5
+Tolima	San Antonio	7
+Tolima	San Luis	13
+Tolima	San Sebastian de Mariquita	28
+Tolima	Santa Isabel	1
+Tolima	Valle de San Juan	1
+Tolima	Venadillo	1
+Tolima	Villahermosa	1
+Valle del Cauca	Total	1869
+Valle del Cauca	Andalucia	4
+Valle del Cauca	Ansermanuevo	5
+Valle del Cauca	Bolivar	6
+Valle del Cauca	Buenaventura	78
+Valle del Cauca	Bugalagrande	3
+Valle del Cauca	Caicedonia	8
+Valle del Cauca	Cali	1196
+Valle del Cauca	Candelaria	23
+Valle del Cauca	Cartago	15
+Valle del Cauca	Dagua	11
+Valle del Cauca	El Aguila	1
+Valle del Cauca	El Cairo	1
+Valle del Cauca	El Cerrito	16
+Valle del Cauca	El Dovio	1
+Valle del Cauca	Florida	17
+Valle del Cauca	Ginebra	10
+Valle del Cauca	Guacari	7
+Valle del Cauca	Guadalajara de Buga	57
+Valle del Cauca	Jamundi	49
+Valle del Cauca	La Cumbre	7
+Valle del Cauca	La Union	7
+Valle del Cauca	Obando	1
+Valle del Cauca	Palmira	169
+Valle del Cauca	Pradera	20
+Valle del Cauca	Restrepo	6
+Valle del Cauca	Riofrio	5
+Valle del Cauca	Roldanillo	7
+Valle del Cauca	San Pedro	1
+Valle del Cauca	Sevilla	21
+Valle del Cauca	Toro	1
+Valle del Cauca	Trujillo	6
+Valle del Cauca	Tulua	65
+Valle del Cauca	Ulloa	1
+Valle del Cauca	Vijes	3
+Valle del Cauca	Yotoco	5
+Valle del Cauca	Yumbo	25
+Valle del Cauca	Zarzal	11
+Vichada	Total	2
+Vichada	La Primavera	1
+Vichada	Puerto Carreno	1
+Total	Total general	27319

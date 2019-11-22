@@ -9,7 +9,7 @@ PATH_violencia = osp.join("data", "Violencia_interpersonal", "csv", "Violencia_i
 df_v = pd.read_csv(PATH_violencia, sep='\t')
 PATH_homicidio = osp.join("data", "homicidios", "csv", "Homicidios_edad_sexo.csv")
 df_h = pd.read_csv(PATH_homicidio, sep='\t')
-print(df_v.head())
+
 df_v.rename(columns=lambda x: x.strip(), inplace=True)
 df_h.rename(columns=lambda x: x.strip(), inplace=True)
 df_v.drop(df_v.index[len(df_v)-1], inplace=True)
@@ -21,13 +21,15 @@ def get_slider(df):
     return data
 
 def get_data(df):
-    data = {}
+    data = []
     for x in df['Edad']:
-        value = []
-        value.append(df.loc[df["Edad"] == x]["Mujer"].values[0].tolist())
-        value.append(df.loc[df["Edad"] == x]["Hombre"].values[0].tolist())
-        value.append(df.loc[df["Edad"] == x]["Total"].values[0].tolist())
-        data[x] = value
+        value = {}
+        value["edad"] = x;
+        value["mujer"] = df.loc[df["Edad"] == x]["Mujer"].values[0].tolist()
+        value["hombre"] = df.loc[df["Edad"] == x]["Hombre"].values[0].tolist()
+        value["total"] = df.loc[df["Edad"] == x]["Total"].values[0].tolist()
+        data.append(value);
+        print(data);
     return json.dumps(data)
 
 def analizar(request):
@@ -38,5 +40,4 @@ def analizar(request):
     context["data_v"] = data_v
     context["data_h"] = data_h
 
-    print(context)
     return render(request, 'app0/vis2.html', context)

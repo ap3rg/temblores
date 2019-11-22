@@ -2,8 +2,8 @@ body {
        font-family: Helvetica;
 }
 svg {
-       width:1000px;
-       height:1000px;
+       width:500px;
+       height:500px;
 }
 .top-label {
        font-size: 13px;

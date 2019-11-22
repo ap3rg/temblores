@@ -1,164 +1,256 @@
-var sliderData = JSON.parse(document.getElementsByTagName('dataS')[0].getAttribute('sliders-vals') || '{}');
 var violenceData = JSON.parse(document.getElementsByTagName('dataV')[0].getAttribute('violence-vals') || '{}');
 var homicideData = JSON.parse(document.getElementsByTagName('dataH')[0].getAttribute('homicide-vals') || '{}');
+var dataWomenV = violenceData.map(function(x) { return x.mujer }),
+  dataMenV = violenceData.map(function(x) { return x.hombre }),
+  barLabels = violenceData.map(function(x) { return x.edad });
 
-const keys = Object.keys(violenceData);
-getPlotData(["15-17", "25-29"])
-var numericSliderData = sliderData.map(function (x) {
-  if(x == ">80") {
-    return "80"
-  }
-  return x.split("-")[0];
-});
-var sliderRange = d3
-    .sliderBottom()
-    .min(numericSliderData[0])
-    .max(numericSliderData[numericSliderData.length - 1])
-    .width(500)
-    .tickValues(numericSliderData)
-    .default([numericSliderData[3], numericSliderData[7]])
-    .fill('#2196f3')
-    .on('onchange', val => {
-      d3.select('p#value-range').text("Rango de edad: " + concatRange(val.map(function(d1) {
-        var start = translate(d1);
-        return start;
-      })));
-      getPlotData(val.map(function(d1) {
-        var start = translate(d1);
-        return start;
-      }));
-    });
+var dataWomenH = homicideData.map(function(x) { return x.mujer }),
+  dataMenH = homicideData.map(function(x) { return x.hombre });
 
-function concatRange(x) {
-    if((x[0] != null) & (x[1] != null)){
-      return x[0].split("-")[0] + "-" + x[1].split("-")[1];
-    }
-};
-
-function translate(d) {
-  var range;
-  for(i = 0; i < sliderData.length; i++) {
-    point = sliderData[i]
-    if(point == ">80"){
-      start = 80;
-      end = 81;
-    } else {
-      start = parseInt(point.split("-")[0])
-      end = parseInt(point.split("-")[1])
-    };
-    if((d >= start) & (d <= end)) {
-      return start + "-" + end;
-    };
-  }
-};
-
-function getPlotData(x){
-  start = x[0]
-  end = x[1]
-  if(start == end) {
-    dataToPlot_v = violenceData[start];
-    dataToPlot_h = homicideData[start];
+var dataV = violenceData.map(function(x) { return x.total });
+var dataH = homicideData.map(function(x) { return x.total });
+var total = dataV.map(function(x, i) {
+  if(dataH[i]){
+    return x + dataH[i]
   } else {
-    var total_v = [0,0,0]
-		var total_h = [0,0,0]
-		var startFlag = false;
-    for(i = 0; i < keys.length; i++) {
-			var currentKey = keys[i];
-			if(currentKey == start) {
-				startFlag = true;
-			};
-			if(startFlag){
-				var currentDateValues_v = violenceData[currentKey];
-				var currentDateValues_h = homicideData[currentKey];
-				if(currentDateValues_h == null) {
-					currentDateValues_h = [0,0,0]
-				}
-				var sum_v = total_v.map(function (num, idx) {
-				  return num + currentDateValues_v[idx];
-				});
-				var sum_h = total_h.map(function (num, idx) {
-				  return num + currentDateValues_h[idx];
-				});
-				total_v = sum_v;
-				total_h = sum_h;
-			};
-			if(currentKey == end) {
-				startFlag = false;
-			};
-		};
-    //console.log(total);
-    dataToPlot_v = total_v;
-    dataToPlot_h = total_h;
-  };
-    plot(dataToPlot_v, dataToPlot_h);
+    return x
+  }});
+
+var selectorColor = "#A1E4D8";
+		clickColor = "tomato"
+
+var width = 350,
+    leftMargin = 100,
+    topMargin = 30,
+    barHeight = 20,
+    barGap = 5,
+    tickGap = 5,
+    tickHeight = 10,
+    scaleFactor = width / (dataV.reduce(function(a, b) {
+        return Math.max(a, b);
+      }) + dataH.reduce(function(a, b) {
+          return Math.max(a, b);
+        })),
+    barSpacing = barHeight + barGap,
+    translateText = "translate(" + leftMargin + "," + topMargin + ")",
+    scaleText = "scale(" + scaleFactor + ",1)";
+
+
+var selector = d3.select("#selector_chart");
+
+var svg_selector = selector.append("svg")
+    .attr("width", 500);
+
+
+var barGroupV = svg_selector.append("g")
+    .attr("transform", translateText + " " + scaleText)
+    .attr("class", "bar");
+
+barGroupV.selectAll("rect")
+     .data(total)
+     .enter().append("rect")
+     .attr("x", 0)
+     .attr("y", function(d,i) {return i * barSpacing})
+     .attr("width", function(d) {return d})
+     .attr("height", barHeight)
+     .attr("fill", selectorColor)
+     .on("click", handleClick)
+     .on("mouseover", handleMouseOver)
+     .on("mouseout", handleMouseOut);
+
+var totals = svg_selector.append("g")
+    .attr("transform", translateText)
+    .attr("class","bar-totals");
+
+totals.selectAll("text")
+    .data(total)
+    .enter().append("text")
+    .attr("x",function(d) {return d*scaleFactor + 30})
+    .attr("y", function(d,i) {return i * barSpacing + barHeight*(2/3)})
+    .text(function(d) {return d})
+    .style("font-size", 13)
+    .style("fill", "#808080")
+
+
+var barLabelGroup = svg_selector.append("g")
+     .attr("transform", translateText)
+     .attr("class","bar-label");
+
+barLabelGroup.selectAll("text")
+    .data(barLabels)
+    .enter().append("text")
+    .attr("x",-5)
+    .attr("y", function(d,i) {return i * barSpacing + barHeight*(2/3)})
+    .text(function(d) {return d})
+    .style("fill", "#808080");
+
+var yAxisLabel = svg_selector.append("g")
+  .attr("transform", translateText)
+  .attr("class","axis-label");
+
+yAxisLabel.selectAll("text")
+  .data(["Rango de Edad"])
+  .enter().append("text")
+  .attr("transform", "rotate(-90)")
+  .attr("y", -75)
+  .attr("x", -((barLabels.length * barSpacing) / 2))
+  .attr("dy", "1em")
+  .style("fill", "#808080")
+  .style("font-size", 15)
+  .text(function(d) {return d});
+
+var graphTitle = svg_selector.append("g")
+  .attr("transform", translateText)
+  .attr("class","axis-label");
+
+graphTitle.selectAll("text")
+	.data(["Incidentes de violencia por edad"])
+	.enter().append("text")
+	.attr("y", -10)
+	.attr("x", 50)
+	.style("font-size", 20)
+	.style("font-weight", "bold")
+	.style("fill", "#606060")
+	.text(function(d) {return d});
+
+var listOn = [];
+
+function handleClick(d, i) {
+  var alredySelected = false;
+  for(j = 0; j < listOn.length; j++) {
+    if(i == listOn[j]){
+      alredySelected = true;
+      break;
+    }
+  }
+  if(alredySelected) {
+    d3.select(this).attr("isClicked", "false")
+    d3.select(this).attr("fill", selectorColor);
+    // remove from list
+    tmp = [];
+    for(j = 0; j < listOn.length; j++) {
+      if(listOn[j] != i) {
+        tmp.push(listOn[j])
+      }
+    };
+    listOn = tmp;
+  } else {
+    listOn.push(i)
+    // Use D3 to select element, change color and size
+    d3.select(this).attr("isClicked", "true")
+    d3.select(this).attr("fill", clickColor);
+  }
+  updateDetails(detailsChart, listOn);
 }
 
-  var gRange = d3
-    .select('div#slider-range')
-    .append('svg')
-    .attr('width', 800)
-    .attr('height', 100)
-    .append('g')
-    .attr('transform', 'translate(30,30)');
+function handleMouseOver(d, i) {
+	d3.select(this).attr( "fill", clickColor);
+}
 
-  gRange.call(sliderRange);
+function handleMouseOut(d, i) {
+	if(d3.select(this).attr("isClicked") == "true") {
+		d3.select(this).attr("fill", clickColor);
+	} else {
+		d3.select(this).attr( "fill", selectorColor);
+	}
+}
 
-  d3.select('p#value-range').text("Rango de edad: " +
-    sliderRange
-      .value()
-      .join('-')
-  );
+var womenDetailsV = violenceData.map(function(d) {return d.mujer}).reduce(function(a, b) {
+  return a + b;
+});
 
-  function plot(dataToPlot_v, dataToPlot_h) {
+var menDetailsV = violenceData.map(function(d) {return d.hombre}).reduce(function(a, b) {
+  return a + b;
+});
 
-  	var ctx = document.getElementById("age-chart").getContext('2d');
-  	var chart = new Chart(ctx, {
-  			type: 'bar',
-  			data: {
-  					labels: [
-  						"Mujeres",
-              "Hombres",
-  						"Total"
-  					],
-  					datasets: [{
-  							label: 'Violencia Interpersonal',
-  							data: dataToPlot_v,
-  							backgroundColor:
-  							'rgba(255, 99, 132, 1)',
-  					},
-  					{
-  							label: 'Homicidios',
-  							data: dataToPlot_h,
-  							backgroundColor:
-  							'rgba(75, 192, 192, 1)',
-  					},]
-  					},
-  			options: {
-  				title: {
-              display: true,
-              text: "Numero de incidentes de violencia",
-  						fontSize: "20"
+var womenDetailsH = homicideData.map(function(d) {return d.mujer}).reduce(function(a, b) {
+  return a + b;
+});
+
+var menDetailsH = homicideData.map(function(d) {return d.hombre}).reduce(function(a, b) {
+  return a + b;
+});
+
+var ctx = document.getElementById("details_chart").getContext('2d');
+var detailsChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: [
+          "Mujeres",
+          "Hombres",
+        ],
+        datasets: [{
+            label: 'Violencia Interpersonal',
+            data: [womenDetailsV, menDetailsV],
+            backgroundColor: "#ffcccc",
+        },
+        {
+            label: 'Homicidios',
+            data: [womenDetailsH, menDetailsH],
+            backgroundColor: "lightseagreen",
+        },]
+        },
+    options: {
+      title: {
+          display: true,
+          text: "Numero de incidentes de violencia",
+          fontSize: "20"
+      },
+      scales: {
+        yAxes: [{
+          stacked: true,
+          scaleLabel: {
+            display: true,
+            labelString: "Numero de incidentes",
+            fontSize: "20"
           },
-  				scales: {
-  					yAxes: [{
-  						stacked: true,
-  						scaleLabel: {
-  			        display: true,
-  			        labelString: "Numero de incidentes",
-  							fontSize: "20"
-  			      },
-  						ticks: {
-  							beginAtZero: true
-  						}
-  					}],
-  					xAxes: [{
-  						stacked: true,
-  						scaleLabel: {
-  			        display: true,
+          ticks: {
+            beginAtZero: true
+          }
+        }],
+        xAxes: [{
+          stacked: true,
+          scaleLabel: {
+            display: true,
 
-  			      }
-  					}]
-  				}
-  			}
-  	});
+          }
+        }]
+      }
+    }
+});
+
+function updateDetails(chart, list) {
+  if(list.length == 0) {
+    chart.data.datasets.forEach((dataset) => {
+      if(dataset.label == "Violencia Interpersonal") {
+        dataset.data = [womenDetailsV, menDetailsV]
+      } else {
+        dataset.data = [womenDetailsH, menDetailsH]
+      }
+    });
+    //console.log(chart.data.datasets);
+    chart.update();
+    return;
   }
+
+  var wDataV = 0;
+  var mDataV = 0;
+  var wDataH = 0;
+  var mDataH = 0;
+  for(j = 0; j<list.length; j++) {
+    i = list[j];
+    wDataV += dataWomenV[i];
+    wDataH += dataWomenH[i];
+    mDataV += dataMenV[i];
+    mDataH += dataMenH[i];
+  }
+    chart.data.datasets.forEach((dataset) => {
+      if(dataset.label == "Violencia Interpersonal") {
+        dataset.data = [wDataV, mDataV]
+      } else {
+        dataset.data = [wDataH, mDataH]
+      }
+    });
+    //console.log(chart.data.datasets);
+    chart.update();
+}

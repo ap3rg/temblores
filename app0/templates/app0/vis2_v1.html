@@ -3,7 +3,7 @@
 {% block content %}
 
 {% load static %}
-<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://unpkg.com/d3-simple-slider"></script>
 
 <link
   rel="stylesheet"
@@ -13,7 +13,7 @@
 />
 
 <!-- CSS for this view -->
-<link rel="stylesheet" href="{% static 'app0/css/vis2.css' %}">
+<!-- <link rel="stylesheet" href="{% static 'app0/css/vis2.css' %}"> -->
 
 <div class="container">
 
@@ -21,27 +21,35 @@
   <header class="jumbotron my-4">
     <h2 class="display-4">Denuncias de violencia cometida por parte de la fuerza publica</h2>
     <h4 class="lead"> Datos entre <b>Enero 2017</b> y <b>Diciembre 2018</b>. </h4>
-    <p class="lead">En la distribución de la izquierda, seleccionar los rangos de edad que desea explorar.
-    En la grafica de la derecha, es posible seleccionar que información se desea visualizar seleccionando la leyenda deseada.</p>
+    <p class="lead">Usar el deslizador para seleccionar el rango de edad que se quiere visualizar.</p>
   </header>
 
 
+  <dataS sliders-vals="{{ sliderValues }}"></dataS>
   <dataV violence-vals="{{ data_v }}"></dataV>
   <dataH homicide-vals="{{ data_h }}"></dataH>
 
   <!-- Page Features -->
   <div class="text-center">
     <div class="row align-items-center">
-      <div class="col-md-8" >
-        <canvas id="details_chart" style="max-width: 700px; height: 500px"></canvas>
+      <div class="col-sm"><b><p id="value-range"></p></b></div>
       </div>
-      <div class="col-md-2" id="selector_chart">
-        <div id="drop" align=center></div>
+    <div class="row align-items-center">
+      <div class="col-sm" align='center'><div id="slider-range"></div></div>
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-8">
+        <div align='center'>
+          <canvas id="age-chart" style="max-width: 700px; height: 500px"></canvas>
+        </div>
       </div>
     </div>
   </div>
 
-</div>
 <script src="{% static 'app0/js/vis2.js' %}"></script>
 
 {% endblock %}

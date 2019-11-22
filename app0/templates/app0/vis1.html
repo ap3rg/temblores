@@ -14,43 +14,52 @@
 />
 
 <!-- CSS for this view -->
-<link rel="stylesheet" href="{% static 'app0/css/vis1.css' %}">
+<!-- <link rel="stylesheet" href="{% static 'app0/css/vis1.css' %}"> -->
 
 <div class="container">
 
   <!-- Jumbotron Header -->
   <header class="jumbotron my-4">
     <h2 class="display-4">Denuncias de violencia cometida por parte de la fuerza publica.</h2>
-    <p class="lead">Usar el deslizador para seleccionar las fechas que se quiere visualizar. <b>Enero 2017</b> a <b>Diciembre 2018</b>.</p>
+    <h4 class="lead"> Datos entre <b>Enero 2017</b> y <b>Diciembre 2018</b>. </h4>
+    <p class="lead">En la distribución de la derecha, seleccionar los meses que se desean explorar.
+      Es posible interactuar con las leyendas de las distribuciones para escoger el dataset que se desea.</p>
   </header>
 
 
   <dataV data-v="{{ data_v }}"></dataV>
   <dataH data-h="{{ data_h }}"></dataH>
-</div>
+
+
   <!-- Page Features -->
   <div class="text-center">
-    <div class="text-center"><b><p id="value-range"></p></b></div>
-    <div class="row align-items-center">
-      <div class="col-sm"><div id="slider-range"></div></div>
-    </div>
-  </div>
-
-
-
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-2">
-    </div>
-    <div class="col-md-8">
-      <div align='center'>
-        <canvas id="violence-chart" style="max-width: 700px; height: 500px"></canvas>
+    <div class="row align-items-center" style="vertical-align:middle">
+      <div class="col-md-8" >
+        <div class="row align-items-center">
+          <canvas
+          id="details_chart_hour"
+          style="max-width: 600px;
+                height: 400px;
+                margin-right: 10px;
+                margin-top: 50px;">
+          </canvas>
+        </div>
+      </div>
+      <div class="col-md-2" id="selector_chart">
       </div>
     </div>
+    <div class="row align-items-center">
+      <canvas
+      id="details_chart_day"
+      style="
+            height: 400px;
+            margin-right: 20px;
+            margin-bottom: 100px">
+      </canvas>
+    </div>
   </div>
-</div>
 
+</div>
 
 
 <script src="{% static 'app0/js/vis1.js' %}"></script>
