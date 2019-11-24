@@ -21,8 +21,10 @@ var _months = contextData_v.map(function(d) {
 })
 let months = [...new Set(_months)];
 
-var selectorColor = "#A1E4D8";
-		clickColor = "tomato"
+var selectorColor = "#FF6666";
+		clickColor = "#33CCCC"
+		violenceColor = "#ffcccc"
+		homicideColor = "#FF6666"
 
 var dataV = buildData(contextData_v)[0];
 		maxV = buildData(contextData_v)[1];
@@ -181,12 +183,12 @@ var chartHour = new Chart(ctx, {
         datasets: [{
             label: 'Violencia Interpersonal',
             data: [],
-            backgroundColor: "#ffcccc",
+            backgroundColor: violenceColor,
         },
         {
             label: 'Homicidios',
             data: [],
-            backgroundColor: "lightseagreen",
+            backgroundColor: homicideColor,
         },]
         },
     options: {
@@ -228,12 +230,12 @@ var chartDay = new Chart(ctx, {
         datasets: [{
             label: 'Violencia Interpersonal',
             data: [],
-            backgroundColor: "#ffcccc",
+            backgroundColor: violenceColor,
         },
         {
             label: 'Homicidios',
             data: [],
-            backgroundColor: "lightseagreen",
+            backgroundColor: homicideColor,
         },]
         },
     options: {

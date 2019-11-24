@@ -9,9 +9,11 @@ console.log(data_v)
 console.log(data_p)
 console.log(totals_v)
 
-var selectorColor = "#003366";
-		clickColor = "tomato"
-    backgroundColor = "#E0E0E0"
+var clickColor = "#33CCCC",
+    backgroundColor = "#FFFFCC",
+		mapColor = "#FF6666",
+		violenceColor = "#ffcccc",
+		homicideColor = "#FF6666";
 
 
 var popDict = {};
@@ -52,7 +54,7 @@ data_p.map(function(x) {
 var color = d3.scale.linear()
   .domain([0, maxPop])
   .clamp(true)
-  .range(['#fff', selectorColor]);
+  .range(['#fff', mapColor]);
 
 var projection = d3.geo.mercator()
   .scale(1500)
@@ -189,12 +191,12 @@ var deptDetails = new Chart(ctx, {
         datasets: [{
             label: 'Violencia Interpersonal',
             data: [],
-            backgroundColor: "#ffcccc",
+            backgroundColor: violenceColor,
         },
         {
             label: 'Homicidios',
             data: [],
-            backgroundColor: "lightseagreen",
+            backgroundColor: homicideColor,
         },]
         },
     options: {

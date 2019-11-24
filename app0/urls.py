@@ -11,5 +11,4 @@ urlpatterns = [
     path('vis3', views.vis3, name='vis3'),
     path('vis4', views.vis4, name='vis4'),
     path('about', views.about, name='about'),
-    path('contact', views.contact, name='contact')
 ]

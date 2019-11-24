@@ -22,6 +22,3 @@ def vis4(request):
 
 def about(request):
     return render(request, 'app0/about.html', None)
-
-def contact(request):
-    return render(request, 'app0/contact.html', None)

@@ -16,8 +16,10 @@ var total = dataV.map(function(x, i) {
     return x
   }});
 
-var selectorColor = "#A1E4D8";
-		clickColor = "tomato"
+var selectorColor = "#AAD9BC",
+		clickColor = "#FFFF66",
+    violenceColor = "#ffcccc",
+    homicideColor = "#FF6666";
 
 var width = 350,
     leftMargin = 100,
@@ -89,7 +91,7 @@ var yAxisLabel = svg_selector.append("g")
   .attr("class","axis-label");
 
 yAxisLabel.selectAll("text")
-  .data(["Rango de Edad"])
+  .data(["Edad de la victima"])
   .enter().append("text")
   .attr("transform", "rotate(-90)")
   .attr("y", -75)
@@ -107,7 +109,7 @@ graphTitle.selectAll("text")
 	.data(["Incidentes de violencia por edad"])
 	.enter().append("text")
 	.attr("y", -10)
-	.attr("x", 50)
+	.attr("x", 80)
 	.style("font-size", 20)
 	.style("font-weight", "bold")
 	.style("fill", "#606060")
@@ -182,12 +184,12 @@ var detailsChart = new Chart(ctx, {
         datasets: [{
             label: 'Violencia Interpersonal',
             data: [womenDetailsV, menDetailsV],
-            backgroundColor: "#ffcccc",
+            backgroundColor: violenceColor,
         },
         {
             label: 'Homicidios',
             data: [womenDetailsH, menDetailsH],
-            backgroundColor: "lightseagreen",
+            backgroundColor: homicideColor,
         },]
         },
     options: {
